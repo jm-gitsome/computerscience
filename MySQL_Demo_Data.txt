@@ -1,0 +1,202 @@
+DROP TABLE IF EXISTS PowerTest;
+CREATE TABLE PowerTest ( id int auto_increment primary key, Voltage DECIMAL(4, 1), Current DECIMAL(3,1), RealPower DECIMAL(5,1), ReactivePower DECIMAL(5, 1));
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.50, 8.44, 510.75, 878.77);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.99, 9.36, 571.64, 977.01);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.48, 10.25, 631.73, 1072.57);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.95, 11.10, 690.07, 1163.89);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.40, 11.89, 745.72, 1249.47);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.82, 12.61, 797.76, 1327.87);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.22, 13.26, 845.31, 1397.76);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.59, 13.81, 887.53, 1457.97);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.92, 14.27, 923.68, 1507.43);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.21, 14.62, 953.11, 1545.30);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.46, 14.86, 975.25, 1570.90);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.66, 14.98, 989.67, 1583.77);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.82, 14.99, 996.08, 1583.69);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.93, 14.88, 994.30, 1570.63);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.99, 14.66, 984.32, 1544.83);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 125.00, 14.32, 966.26, 1506.72);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.96, 13.88, 940.39, 1456.97);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.87, 13.34, 907.13, 1396.43);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.73, 12.70, 867.02, 1326.15);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.55, 11.99, 820.73, 1247.34);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.32, 11.20, 769.03, 1161.34);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.04, 10.36, 712.82, 1069.63);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.73, 9.48, 653.04, 973.72);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.38, 8.56, 590.70, 875.23);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.99, 7.62, 526.87, 775.74);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.58, 6.69, 462.62, 676.87);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.14, 5.77, 399.03, 580.18);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.67, 4.87, 337.16, 487.16);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.20, 4.01, 278.02, 399.21);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.71, 3.21, 222.59, 317.64);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.21, 2.48, 171.76, 243.59);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 119.71, 1.82, 126.34, 178.08);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 119.21, 1.26, 87.07, 121.97);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 118.72, 0.79, 54.55, 75.94);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 118.25, 0.42, 29.29, 40.52);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 117.79, 0.17, 11.67, 16.05);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 117.35, 0.03, 1.98, 2.71);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 116.94, 0.01, 0.37, 0.50);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 116.56, 0.10, 6.86, 9.27);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 116.22, 0.31, 21.39, 28.71);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.91, 0.63, 43.75, 58.38);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.64, 1.06, 73.65, 97.70);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.42, 1.59, 110.68, 145.96);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.24, 2.21, 154.35, 202.36);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.11, 2.91, 204.08, 265.98);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.03, 3.69, 259.20, 335.83);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.00, 4.52, 318.96, 410.86);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.02, 5.40, 382.57, 489.94);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.09, 6.32, 449.15, 571.90);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.21, 7.25, 517.81, 655.53);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.37, 8.19, 587.59, 739.62);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.58, 9.11, 657.52, 822.93);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 115.84, 10.01, 726.61, 904.24);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 116.14, 10.88, 793.85, 982.35);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 116.47, 11.68, 858.26, 1056.10);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 116.84, 12.43, 918.86, 1124.36);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 117.25, 13.09, 974.72, 1186.09);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 117.68, 13.67, 1024.95, 1240.32);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 118.13, 14.16, 1068.72, 1286.18);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 118.60, 14.53, 1105.29, 1322.93);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 119.09, 14.80, 1134.01, 1349.92);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 119.58, 14.96, 1154.32, 1366.67);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.08, 15.00, 1165.80, 1372.85);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.58, 14.92, 1168.16, 1368.29);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.08, 14.73, 1161.25, 1352.97);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.56, 14.42, 1145.07, 1327.08);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.02, 14.00, 1119.77, 1290.95);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.47, 13.49, 1085.67, 1245.11);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.89, 12.88, 1043.23, 1190.25);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.28, 12.19, 993.09, 1127.22);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.64, 11.42, 936.01, 1057.00);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.97, 10.59, 872.90, 980.74);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.25, 9.71, 804.79, 899.65);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.49, 8.80, 732.80, 815.08);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.69, 7.87, 658.15, 728.42);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.84, 6.94, 582.11, 641.09);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.94, 6.01, 505.99, 554.53);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.99, 5.10, 431.11, 470.18);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.99, 4.24, 358.79, 389.42);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.95, 3.42, 290.28, 313.56);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.85, 2.67, 226.79, 243.82);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.70, 1.99, 169.42, 181.29);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.51, 1.40, 119.18, 126.94);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 124.27, 0.90, 76.94, 81.57);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.99, 0.51, 43.42, 45.82);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.67, 0.23, 19.19, 20.16);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 123.31, 0.05, 4.64, 4.85);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.92, 0.00, 0.01, 0.01);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.51, 0.06, 5.34, 5.53);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 122.06, 0.24, 20.51, 21.17);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.60, 0.53, 45.23, 46.49);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 121.11, 0.93, 79.07, 80.92);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.62, 1.44, 121.43, 123.74);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 120.12, 2.04, 171.58, 174.12);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 119.62, 2.72, 228.69, 231.13);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 119.13, 3.48, 291.82, 293.73);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 118.64, 4.30, 359.96, 360.86);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 118.17, 5.17, 432.02, 431.39);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 117.71, 6.07, 506.88, 504.16);
+INSERT INTO PowerTest (Voltage, Current, RealPower, ReactivePower)
+VALUES ( 117.28, 7.00, 583.40, 578.03);

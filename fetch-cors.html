@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch with CORS</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        p{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fetch with CORS</h1>
+    </header>
+    <main>
+        <p>Click To Update</p>
+	<canvas id="myVolt" ></canvas>
+	<canvas id="myAmp" ></canvas>
+    </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+
+	//setInterval(doFetch, 2000);
+	var Volt = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	var Curr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	var count = 0;
+        let p;
+        
+        document.addEventListener('DOMContentLoaded', 
+            function(){
+                p = document.querySelector('main>p');
+                p.addEventListener('click', doFetch);
+            });
+        
+        function doFetch(ev){
+	    Volt.shift();
+	    Curr.shift();
+
+            let uri = 'http://localhost:8080/wems/test';
+	//let uri = 'http://jsonplaceholder.typicode.com/posts?userId=1&postId=65'
+	//let uri = 'https://learnwebcode.github.io/json-example/animals-1.json';
+            
+            let h = new Headers();
+            h.append('Accept', 'application/json');
+            
+            let req = new Request(uri, {
+                method: 'POST',
+                headers: h,
+                mode: 'cors'
+            });
+            
+            fetch(req)
+            .then( (response)=>{
+                if(response.ok){
+                    return response.json();
+                }else{
+                    throw new Error('BAD HTTP stuff');
+                }
+            })
+            .then( (jsonData) =>{
+                console.log(jsonData);
+		//var JsonObj = JSON.parse(jsonData);
+		Volt.push(jsonData.PowerData[count].Voltage);
+		Curr.push(jsonData.PowerData[count].Current);
+                //p.textContent = JSON.stringify(jsonData, null, 4);
+            })
+            .catch( (err) =>{
+                console.log('ERROR:', err.message);
+            });
+	    UpdateGraph();
+	    count++;
+
+        }
+
+function UpdateGraph(){
+var ctx = document.getElementById("myVolt");
+var myChart = new Chart(ctx, {
+type: 'line',
+data: {
+    labels: ["", "", "", "", "", "", "", "", ""],
+    datasets: [{
+        label: 'Voltage',
+        data: Volt,
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)'
+        ],
+        borderColor: [
+            'rgba(255,99,132,1)'
+        ],
+        borderWidth: 1
+    },]
+},
+options: {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true
+            }
+        }]
+    }
+}
+});
+
+var ctx2 = document.getElementById("myAmp");
+var myChart2 = new Chart(ctx2, {
+type: 'line',
+data: {
+    labels: ["", "", "", "", "", "", "", "", ""],
+    datasets: [{
+        label: 'Current',
+        data: Curr,
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)'
+        ],
+        borderColor: [
+            'rgba(255,99,132,1)'
+        ],
+        borderWidth: 1
+    } ]
+},
+options: {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true
+            }
+        }]
+    }
+}
+});
+}
+
+    </script>
+</body>
+</html>
